@@ -1,3 +1,4 @@
+/* Hoofdstijl van de pagina */
 body {
     font-family: Arial, sans-serif;
     color: rgb(197, 169, 13);
@@ -9,14 +10,17 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+/* Stijl van de header */
 header {
     text-align: center;
     width: 100%;
     background-color: black;
     color:  rgb(197, 169, 13);
-
     padding: 20px 0;
 }
+
+/* Stijl van de navigatiebalk */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -35,13 +39,16 @@ nav ul li a:hover,
 nav ul li a:focus {
     font-size: 22px;
 }
+
+/* Stijl van de hoofdinhoud */
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
+
+/* Stijl van de footer */
 footer {
     text-align: center;
     width: 100%;
@@ -49,14 +56,17 @@ footer {
     background-color: black;
     color: rgb(197, 169, 13);
 }
+
+/* Aanpassingen in de hoofdinhoud */
 main {
     margin: 5px;
 }
-
 main h1,
 main p {
     margin-top: 30px;
 }
+
+/* Stijl van de navigatiebalk (alternatief) */
 ul {
     list-style-type: none;
     margin: 0;
@@ -66,24 +76,24 @@ ul {
 li {
     float: center;
 }
-
 li a {
     display: block;
     padding: 8px;
     background-color: rgb(29, 28, 28);
 }
+
+/* Stijl van het menu */
 .menu {
     display: flex;
-    justify-content: space-around
-    
-
+    justify-content: space-around;
 }
+
+/* Stijl van de contactgegevens */
 .contact-gegevens {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
-
 .contact-gegevens p {
     margin: 0;
     padding: 5px 0;
@@ -102,12 +112,15 @@ li a {
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
 }
+
+/* Stijl van de container met kleine blokken */
 .boxes-container {
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
 
+/* Stijl van één klein blok */
 .box {
     width: 30%;
     border: 1px solid #ccc;
@@ -115,18 +128,47 @@ li a {
     box-sizing: border-box;
 }
 
+/* Stijl van de afbeelding in het kleine blok */
 .box img {
     width: 100%;
     height: auto;
 }
 
+/* Stijl van kleine tekst in het kleine blok */
 .small-text {
     margin-top: 10px;
     font-size: 18px;
 }
-
 .big-text {
     margin-top: 10px;
     font-size: 14px;
     font-weight: bold;
+}
+.new-boxes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 20px;
+}
+.new-box {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+}
+.new-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.new-small-text {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: right;
+}
+.new-big-text {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
 }
