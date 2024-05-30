@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(197, 169, 13);
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color:  rgb(197, 169, 13);
+
+    padding: 20px 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color:  rgb(197, 169, 13);
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    font-size: 22px;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+    color: rgb(197, 169, 13);
+}
+main {
+    margin: 5px;
+}
+
+main h1,
+main p {
+    margin-top: 30px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: center;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: rgb(29, 28, 28);
+}
+.menu {
+    display: flex;
+    justify-content: space-around
+    
+
+}
+.contact-gegevens {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contact-gegevens p {
+    margin: 0;
+    padding: 5px 0;
+}
+.contact-gegevens p {
+    color: white;
+    text-align: left;
+}
+.contact-gegevens {
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+}
+.boxes-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.box {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.small-text {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.big-text {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
