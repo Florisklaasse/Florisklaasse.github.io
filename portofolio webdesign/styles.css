@@ -7,7 +7,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 100vh;
 }
 
@@ -45,7 +44,6 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 /* Stijl van de footer */
@@ -147,7 +145,6 @@ li a {
 .new-boxes-container {
     display: flex;
     flex-direction: column;
-    justify-content: left;
     margin: 20px;
 }
 .new-box {
