@@ -14,7 +14,7 @@ body {
 header {
     text-align: center;
     width: 100%;
-    background-color: black;
+    background-color: rgb(69, 69, 69);
     color:  rgb(197, 169, 13);
     padding: 20px 0;
 }
@@ -23,27 +23,34 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
+
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
+
 nav ul li a {
-    color:  rgb(197, 169, 13);
+    color: rgb(197, 169, 13);
     text-decoration: none;
     font-size: 18px;
     transition: font-size 0.3s ease;
 }
+
 nav ul li a:hover,
 nav ul li a:focus {
     font-size: 22px;
 }
+
 
 /* Stijl van de hoofdinhoud */
 main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin: 5px;
 }
 
 /* Stijl van de footer */
@@ -55,10 +62,6 @@ footer {
     color: rgb(197, 169, 13);
 }
 
-/* Aanpassingen in de hoofdinhoud */
-main {
-    margin: 5px;
-}
 main h1,
 main p {
     margin-top: 30px;
@@ -77,24 +80,13 @@ li {
 li a {
     display: block;
     padding: 8px;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(69, 67, 69)
 }
 
 /* Stijl van het menu */
 .menu {
     display: flex;
-    justify-content: space-around;
-}
-
-/* Stijl van de contactgegevens */
-.contact-gegevens {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-.contact-gegevens p {
-    margin: 0;
-    padding: 5px 0;
+    justify-content:space-around;
 }
 .contact-gegevens p {
     color: white;
@@ -102,13 +94,14 @@ li a {
 }
 .contact-gegevens {
     position: absolute;
-    top: 120%;
     left: 5%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 /* Stijl van de container met kleine blokken */
@@ -136,36 +129,79 @@ li a {
 .small-text {
     margin-top: 10px;
     font-size: 18px;
+    font-weight: bold;
 }
+/* Stijl voor grote tekst in beschrijvingen */
 .big-text {
     margin-top: 10px;
     font-size: 14px;
-    font-weight: bold;
 }
+
+/* Container voor nieuwe boxen, met flex-direction als kolom en marges */
 .new-boxes-container {
     display: flex;
     flex-direction: column;
     margin: 30px;
 }
+
+/* Stijl voor elke nieuwe box, met flex-uitlijning naar links en marges */
 .new-box {
     display: flex;
     align-items: left;
     margin-bottom: 20px;
 }
+
+/* Stijl voor afbeeldingen in nieuwe boxen, met vaste breedte en hoogte, en marges */
 .new-box img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin-right: 20px;
 }
+
+/* Stijl voor kleine tekst in nieuwe boxen, met marges, grootte, en tekst-uitlijning */
 .new-small-text {
-    margin-top: 0;
+    margin-top: 10px;
     font-size: 18px;
-    text-align: right;
-}
-.new-big-text {
-    margin-top: 0;
-    font-size: 14px;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
+}
+
+/* Stijl voor grote tekst in nieuwe boxen, met marges en tekst-uitlijning */
+.new-big-text {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Stijl voor over-ons sectie, met tekst-uitlijning en marges */
+.over-ons {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Stijl voor contactgegevens in verschillende secties, met marges */
+.contact-gegevens-onze-chefs {
+    margin-top: 100%;
+}
+
+.contact-gegevens-ons-menu {
+    margin-top: 100%;
+}
+
+.contact-gegevens-over-ons {
+    margin-top: 100%;
+}
+
+.contact-gegevens-home {
+    margin-top: 100%;
+}
+/* Stijl voor de home-pagina achtergrond */
+body.home {
+    background-image: url(logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    image-rendering: optimizeQuality;
 }
